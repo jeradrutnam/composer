@@ -6,7 +6,6 @@ window.scope = window.location.pathname;
 var Application = require('./js/main').default;
 const config = require('./config').default;
 var app = new Application(config);
-var appTheme = require('./scss/themes/light.scss').default;
 
 app.render();
 app.displayInitialView();

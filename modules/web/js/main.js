@@ -40,7 +40,6 @@ import 'bootstrap';
 import 'theme_wso2';
 import '../css/jstree.css';
 
-
 class Application {
 
     /**
@@ -101,7 +100,7 @@ class Application {
         _.set(debuggerOpts, 'launchManager', LaunchManager);
         this.debugger = new Debugger(debuggerOpts);
 
-        DebugManager.init(debuggerOpts);
+        DebugManager.init(debuggerOpts);     
     }
 
     validateConfig(config) {

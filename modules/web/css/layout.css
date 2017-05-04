@@ -350,11 +350,6 @@ div[class*="col-sm-"] {
     right: 0;
 }
 
-#tab-content-wrapper {
-    position: relative;
-    background-color: white;
-}
-
 .about-dialog-close {
     margin-top: 12px;
     margin-right: 12px;

@@ -59,6 +59,7 @@
     box-shadow: none;
 }
 
+/*
 .panel-title {
     background: white;
     border-top: 1px solid #909090;
@@ -66,6 +67,7 @@
     border-right: 1px solid #909090;
     vertical-align: middle;
 }
+*/
 
 .panel-title > a {
     margin-left: 6px;

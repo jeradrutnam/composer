@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
 ~   Copyright (c) 2016, WSO2 Inc. (http://wso2.com) All Rights Reserved.
 ~
@@ -45,7 +46,12 @@
     <link rel="stylesheet" type="text/css" href="css/left-tool-bar.css"/>
     
     <link rel="stylesheet" type="text/css" href="dist/bundle.css"/>
-    <link rel="stylesheet" type="text/css" href="dist/main.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="dist/main.css"/>-->
+    
+    <link rel="stylesheet" href="dist/themes/light.css" title="light" disabled/>
+    <link rel="stylesheet" href="dist/themes/dark.css" title="dark" disabled/>
+    <link rel="stylesheet" href="dist/themes/mid.css" title="mid" disabled/>
+    
 </head>
 <body class="sticky-footer">
 
@@ -591,11 +597,22 @@
                 <h3 class="modal-title" id="aboutSettingsLabel">Settings</h3>
             </div>
             <div class="modal-body add-margin-top-2x add-margin-bottom-2x">
-                <div class="row">
+                
+                <h4>Choose a theme</h4>
+                <hr />
+                <div class="row no-gutter">
+                    <div class="col-md-8 theme-chooser">
+                        <a onclick="setActiveStyleSheet('light'); return false;" class="theme-pick"><span class="square light"></span></a>
+                        <a onclick="setActiveStyleSheet('dark'); return false;" class="theme-pick"><span class="square dark"></span></a>
+                        <a onclick="setActiveStyleSheet('mid'); return false;" class="theme-pick"><span class="square mid"></span></a>
+                    </div>
+                </div>
+                
+                <h4>Source View</h4>
+                <hr />
+                <div class="row no-gutter">
                     <div class="col-md-5">
                         <form>
-                            <h4>Source View</h4>
-                            <hr />
                             <div class="form-group">
                                 <label for="sourceViewTheme">Theme</label>
                                 <select class="form-control" id="sourceViewTheme">
@@ -674,6 +691,7 @@
 <!--End: About Modal-->
 
 <script src="dist/bundle.js"></script>
+<script src="styleswitcher.js"></script>
 
 </body>
 </html>

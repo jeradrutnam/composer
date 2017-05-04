@@ -2,12 +2,6 @@ body {
     background: #232323;
 }
 
-/*
-.footer {
-    background: #282b2f;
-}
-*/
-
 #alerts-container {
     display: none
 }
@@ -20,11 +14,6 @@ body {
     background-color: #232323;
     border-top: solid #1e1e1e;
     border-bottom: solid #1e1e1e;
-}
-
-.header.header-default {
-    background-color: #16191d;
-    min-height: 27px;
 }
 
 #editor-container {
