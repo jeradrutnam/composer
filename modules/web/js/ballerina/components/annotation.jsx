@@ -32,7 +32,7 @@ class Annotation extends React.Component {
         let children = [];
 
         let selectedClass = (this.state.selected)? "active-annotation":"";
-        let removeIcon = (this.state.selected)? <div className="annotation-remove" onClick={this.deleteAnnotation.bind(this)}><i className="fw fw-delete"></i></div>:<span></span>;
+        let removeIcon = (this.state.selected)? <div className="annotation-remove" onClick={this.deleteAnnotation.bind(this)}><i className="fw fw-cancel"></i></div>:<span></span>;
 
         let key = <td className="annotation-key"><span className="package-name">@{model.getPackageName()}</span>:<span className="identifire">{model.getIdentifier() + " { "}</span></td>;
         if(entries.length == 0){
